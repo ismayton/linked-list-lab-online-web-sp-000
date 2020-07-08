@@ -41,11 +41,7 @@ function addressAt(index, linkedList, collection)
 function indexAt(node, collection, linkedList)
 {
   let counter = 0;
-  let comparedNode = next(node, collection)
-  if(node == collection[linkedList])
-  {
-    return 0
-  }
+  let comparedNode = headNode(linkedList, collection)
   if(getName(node) == getName(comparedNode))
   {
     return counter;
