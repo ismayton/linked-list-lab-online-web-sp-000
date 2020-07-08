@@ -44,14 +44,13 @@ function indexAt(node, collection, linkedList)
   let comparedNode = headNode(linkedList, collection)
   if(getName(node) == getName(comparedNode))
   {
-    return;
+    return counter;
   }
   else
   {
     comparedNode = next(comparedNode, collection)
     counter++
   }
-return counter
 }
 
 function insertNodeAt(index, address, linkedList, collection)
