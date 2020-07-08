@@ -44,7 +44,7 @@ function indexAt(node, collection, linkedList)
   let comparedNode = headNode(linkedList, collection)
   if(getName(node) == getName(comparedNode))
   {
-    return counter;
+    return;
   }
   else
   {
