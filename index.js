@@ -40,7 +40,7 @@ function addressAt(index, linkedList, collection)
 
 function indexAt(node, collection, linkedList)
 {
-  let counter = 0;
+  let index = 0;
   let comparedNode = headNode(linkedList, collection)
   if(getName(node) == getName(comparedNode))
   {
@@ -51,6 +51,7 @@ function indexAt(node, collection, linkedList)
     comparedNode = next(comparedNode, collection)
     counter++
   }
+  return counter;
 }
 
 function insertNodeAt(index, address, linkedList, collection)
